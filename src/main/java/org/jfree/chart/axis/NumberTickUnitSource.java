@@ -207,8 +207,7 @@ public class NumberTickUnitSource implements TickUnitSource, Serializable {
         }
         return 0;
     }
-    //TODO: class overrides equals equals but not hashcode
-    //FIXME: define and override for hashcode
+    
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
@@ -232,4 +231,11 @@ public class NumberTickUnitSource implements TickUnitSource, Serializable {
         }
         return true;
     }
+    
+    public boolean hashcode(Object obj){
+    	return obj.hashCode() == this.hashCode();
+    	
+    	
+    }
+    
 }
