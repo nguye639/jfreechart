@@ -189,7 +189,7 @@ public class BlockBorder implements BlockFrame, Serializable {
     
     @Override
     public boolean equals(Object obj) {
-        if (obj == this) {
+        if (obj.hashCode() == this.hashCode()) {
             return true;
         }
         if (!(obj instanceof BlockBorder)) {
@@ -204,7 +204,7 @@ public class BlockBorder implements BlockFrame, Serializable {
         }
         return true;
     }
-
+    @Override
     public boolean hashcode(Object obj){
     	return obj.hashCode() == this.hashCode();
     	
