@@ -3064,7 +3064,7 @@ public class ChartPanel extends JPanel implements ChartChangeListener,
      */
     //TODO: Method must be made private
     //FIXME: add private declaration
-    protected void readObject(ObjectInputStream stream)
+    private void readObject(ObjectInputStream stream)
         throws IOException, ClassNotFoundException {
         stream.defaultReadObject();
 
