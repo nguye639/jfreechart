@@ -3048,6 +3048,8 @@ public class ChartPanel extends JPanel implements ChartChangeListener,
      *
      * @throws IOException  if there is an I/O error.
      */
+    //TODO: Method must be made private
+    //FIXME: add private declaration
     protected void writeObject(ObjectOutputStream stream) throws IOException {
         stream.defaultWriteObject();
     }
