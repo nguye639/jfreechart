@@ -311,6 +311,8 @@ public class CenterArrangement implements Arrangement, Serializable {
      *
      * @return A boolean.
      */
+    //TODO: equals without hashcode
+    //FIXME: add hashcode method
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
