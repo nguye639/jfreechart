@@ -480,8 +480,7 @@ public class LegendGraphic extends AbstractBlock
      * @return The block size (in Java2D units, never {@code null}).
      */
     @Override
-    //TODO: repeated conditional test in this method
-    //FIXME: remove repeat conditional test
+    
     public Size2D arrange(Graphics2D g2, RectangleConstraint constraint) {
         RectangleConstraint contentConstraint = toContentConstraint(constraint);
         LengthConstraintType w = contentConstraint.getWidthConstraintType();
@@ -495,9 +494,7 @@ public class LegendGraphic extends AbstractBlock
                 else if (h == LengthConstraintType.RANGE) {
                     throw new RuntimeException("Not yet implemented.");
                 }
-                else if (h == LengthConstraintType.FIXED) {
-                    throw new RuntimeException("Not yet implemented.");
-                }   break;
+                break;
             case RANGE:
                 if (h == LengthConstraintType.NONE) {
                     throw new RuntimeException("Not yet implemented.");
