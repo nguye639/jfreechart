@@ -196,6 +196,8 @@ public class TickUnits implements TickUnitSource, Cloneable, Serializable {
      *
      * @return A boolean.
      */
+    //TODO: equals without hashcode
+    //FIXME: add hashcode statement
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
