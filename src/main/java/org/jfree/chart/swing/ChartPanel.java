@@ -3048,9 +3048,8 @@ public class ChartPanel extends JPanel implements ChartChangeListener,
      *
      * @throws IOException  if there is an I/O error.
      */
-    //TODO: Method must be made private
-    //FIXME: add private declaration
-    protected void writeObject(ObjectOutputStream stream) throws IOException {
+    
+    private void writeObject(ObjectOutputStream stream) throws IOException {
         stream.defaultWriteObject();
     }
 
@@ -3062,8 +3061,7 @@ public class ChartPanel extends JPanel implements ChartChangeListener,
      * @throws IOException  if there is an I/O error.
      * @throws ClassNotFoundException  if there is a classpath problem.
      */
-    //TODO: Method must be made private
-    //FIXME: add private declaration
+    
     private void readObject(ObjectInputStream stream)
         throws IOException, ClassNotFoundException {
         stream.defaultReadObject();
