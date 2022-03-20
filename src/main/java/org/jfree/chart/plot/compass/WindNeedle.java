@@ -66,15 +66,14 @@ public class WindNeedle extends ArrowNeedle implements Cloneable, Serializable {
      * @param rotate  the rotation point.
      * @param angle  the angle.
      */
-    //TODO: invalid null check
-    //FIXME: remove invalid null check
+    
     
     @Override
     protected void drawNeedle(Graphics2D g2, Rectangle2D plotArea,
             Point2D rotate, double angle) {
 
         super.drawNeedle(g2, plotArea, rotate, angle);
-        if ((rotate != null) && (plotArea != null)) {
+        if ((rotate != null)) {
 
             int spacing = getSize() * 3;
             Rectangle2D newArea = new Rectangle2D.Double();
