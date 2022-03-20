@@ -313,6 +313,8 @@ public class AxisSpace implements Cloneable, PublicCloneable, Serializable {
      *
      * @return {@code true} or {@code false}.
      */
+    //TODO: Comparing floating point values
+    //FIXME: change to range abs(x-y) < .000001
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
