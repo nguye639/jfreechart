@@ -63,4 +63,6 @@ public interface BlockFrame {
      */
     void draw(Graphics2D g2, Rectangle2D area);
 
+	boolean hashcode(Object obj);
+
 }

@@ -186,8 +186,7 @@ public class BlockBorder implements BlockFrame, Serializable {
      *
      * @return A boolean.
      */
-    //TODO: equals without hashcode
-    //FIXME: add hashcode method
+    
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
@@ -206,6 +205,10 @@ public class BlockBorder implements BlockFrame, Serializable {
         return true;
     }
 
+    public boolean hashcode(Object obj){
+    	return obj.hashCode() == this.hashCode();
+    	
+    }
     /**
      * Provides serialization support.
      *
