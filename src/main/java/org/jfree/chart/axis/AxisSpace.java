@@ -324,7 +324,7 @@ public class AxisSpace implements Cloneable, PublicCloneable, Serializable {
             return false;
         }
         AxisSpace that = (AxisSpace) obj;
-        if (this.top != that.top) {
+        if (Math.abs(this.top - that.top) > .000001) {
             return false;
         }
         if (this.bottom != that.bottom) {
