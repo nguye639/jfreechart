@@ -1129,8 +1129,7 @@ public class CyclicNumberAxis extends NumberAxis {
      *
      * @return A boolean.
      */
-    //TODO: Comparing floating point values
-    //FIXME: change to range abs(x-y) < .000001
+    
     @Override
     public boolean equals(Object obj) {
         if (obj == this) {
@@ -1143,7 +1142,7 @@ public class CyclicNumberAxis extends NumberAxis {
             return false;
         }
         CyclicNumberAxis that = (CyclicNumberAxis) obj;
-        if (this.period != that.period) {
+        if (Math.abs(this.period - that.period) > .000001) {
             return false;
         }
         if (this.offset != that.offset) {
